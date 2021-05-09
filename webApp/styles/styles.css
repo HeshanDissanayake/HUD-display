@@ -1,0 +1,78 @@
+@font-face{
+    font-family: "roboto";
+    src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.main_page{
+    display:grid;
+    background: rgb(32, 32, 32);
+    height: 100%;
+    width: 100%;
+
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 33% 33% 33%;
+    
+    justify-items: center;
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+}
+
+.value_cont{
+    display:grid;
+    grid-template-rows: 30% 50% 20%;
+    padding-top: 4vh;
+    align-items: center;
+    justify-items: center;
+}
+
+.label{
+    align-self:end;
+    font-size: 190%;
+    font-weight:bolder;
+}
+
+.value_label{
+    
+    font-size: 10vh;
+
+}
+
+.dial_cont{
+    display:flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    grid-area: 1 / 2 / span 3 ;
+    align-items: center;
+    background: rgba(255, 0, 0, 0.26);
+
+}
+.dial{
+    height: 80vh;
+    width: 80vh;
+    margin-top:5vh;
+    background: greenyellow;
+    border-radius: 40vh;
+}
+.dial_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:1vh;
+    font-size: 4.5vh;
+}
+.dial_arm{
+    border: 1px solid;
+    height: 100%;
+    transform: rotate(30deg);
+}
+
+.low_bat{
+    font-size: 3vh;
+    color:rgb(235, 27, 27);           
+}
